@@ -1,103 +1,76 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>امیررضا صفری</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>امیررضا صفری</title>
+    <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      font-family: 'Dubai', sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+}
 
-    header {
-      background: #ff6f61;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
+/* هدر عمودی در سمت راست */
+.vertical-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 50px;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
+/* منو ناوبری */
+.vertical-header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-    main {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 0 20px;
-    }
+/* آیتم‌های لیست */
+.vertical-header nav ul li {
+    margin: 20px 0;
+}
 
-    article {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+/* لینک‌ها */
+.vertical-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
 
-    article h2 {
-      margin-top: 0;
-      color: #ff6f61;
-    }
+/* هاور لینک‌ها */
+.vertical-header nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+<\style>
+/* محتوای اصلی صفحه */
+main {
+    margin-right: 220px; /* فضای کنار هدر */
+    padding: 20px;
+}
 
-    article .date {
-      font-size: 0.9em;
-      color: #999;
-      margin-bottom: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #333;
-      color: white;
-      margin-top: 40px;
-    }
-
-    a {
-      color: #ff6f61;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
-
-  <header>
-    <h1>امیررضا صفری</h1>
-  </header>
-
-  <main>
-    <article>
-      <h2>چرا باید فیلترینگ وجود داشته باشد؟ بیایید ببینیم!</h2>
-      <div class="date">۲۹ مرداد ۱۴۰۴</div>
-      <p>
-        اینجا متن نوشته اولت قرار می‌گیره. می‌تونی تحلیل‌ها، نقاشی‌ها یا افکار خودت رو اینجا بنویسی.
-      </p>
-      <a href="#">ادامه مطلب...</a>
-    </article>
-
-    <article>
-      <h2>عنوان نوشته دوم</h2>
-      <div class="date">۲۸ مرداد ۱۴۰۴</div>
-      <p>
-        اینجا متن نوشته دوم قرار می‌گیره. می‌تونی هر بار نوشته جدیدت رو اضافه کنی و این لیست بزرگ‌تر می‌شه.
-      </p>
-      <a href="#">ادامه مطلب...</a>
-    </article>
-  </main>
-
-  <footer>
-    © ۱۴۰۴ وبلاگ من
-  </footer>
-
+    <header class="vertical-header">
+        <nav>
+            <ul>
+                <li><a href="#">خانه</a></li>
+                <li><a href="#">درباره ما</a></li>
+                <li><a href="#">خدمات</a></li>
+                <li><a href="#">تماس با ما</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>محتوای صفحه</h1>
+        <p>این یک مثال ساده از هدر عمودی راست‌چین است.</p>
+    </main>
 </body>
 </html>

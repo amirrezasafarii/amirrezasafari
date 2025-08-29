@@ -3,62 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>امیررضا صفری</title>
-    <link rel="stylesheet" href="style.css">
-  <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    direction: rtl;
-}
+    <title>وبسایت خام با CSS داخلی</title>
+    <style>
+        /* تنظیم پایه‌ای */
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            direction: rtl; /* راست‌چین */
+        }
 
-/* هدر عمودی در سمت راست */
-.vertical-header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 200px;
-    height: 100%;
-    background-color: #333;
-    padding-top: 50px;
-}
+        /* هدر */
+        header {
+            background-color: #eee;
+            padding: 20px;
+        }
 
-/* منو ناوبری */
-.vertical-header nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
+        /* منو ناوبری */
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 10px;
+        }
 
-/* آیتم‌های لیست */
-.vertical-header nav ul li {
-    margin: 20px 0;
-}
+        header nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
 
-/* لینک‌ها */
-.vertical-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    transition: background-color 0.3s;
-}
+        /* بخش اصلی */
+        main {
+            padding: 20px;
+        }
 
-/* هاور لینک‌ها */
-.vertical-header nav ul li a:hover {
-    background-color: #575757;
-    border-radius: 4px;
-}
-<\style>
-/* محتوای اصلی صفحه */
-main {
-    margin-right: 220px; /* فضای کنار هدر */
-    padding: 20px;
-}
+        /* بخش‌ها */
+        section {
+            margin-bottom: 20px;
+        }
 
+        /* فوتر */
+        footer {
+            background-color: #eee;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <header class="vertical-header">
+
+    <header>
+        <h1>عنوان وبسایت</h1>
         <nav>
             <ul>
                 <li><a href="#">خانه</a></li>
@@ -68,9 +63,22 @@ main {
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1>محتوای صفحه</h1>
-        <p>این یک مثال ساده از هدر عمودی راست‌چین است.</p>
+        <section>
+            <h2>عنوان بخش</h2>
+            <p>متن نمونه بخش اول.</p>
+        </section>
+
+        <section>
+            <h2>عنوان بخش دوم</h2>
+            <p>متن نمونه بخش دوم.</p>
+        </section>
     </main>
+
+    <footer>
+        <p>© 2025 تمام حقوق محفوظ است.</p>
+    </footer>
+
 </body>
 </html>

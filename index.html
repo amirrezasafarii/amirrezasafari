@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>وبلاگ من</title>
   <style>
-    @import url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css');
+    @import url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css');
 
     body {
       margin: 0;
-      font-family: 'Vazir', sans-serif;
+      font-family: 'Shabnam', sans-serif;
       background: #fff;
       display: flex;
       flex-direction: row;
@@ -22,10 +22,12 @@
       background: #fff;
       border-top: 6px solid;
       border-image: linear-gradient(to right, orange, yellow) 1;
+      border-right: 1px solid #000;
       padding: 20px;
       box-sizing: border-box;
       transition: all 0.3s ease;
       z-index: 1000;
+      overflow-y: auto;
     }
 
     header h1 {
@@ -58,7 +60,9 @@
     /* Blog Section */
     main {
       flex: 1;
-      padding: 20px;
+      padding: 40px;
+      max-width: 900px;
+      margin: 0 auto;
       overflow-y: auto;
     }
 
@@ -89,8 +93,9 @@
       display: none;
       width: 100%;
       background: #fff;
-      border-bottom: 6px solid;
+      border-top: 6px solid;
       border-image: linear-gradient(to right, orange, yellow) 1;
+      border-bottom: 1px solid #000;
       padding: 15px 20px;
       box-sizing: border-box;
       justify-content: space-between;
@@ -111,6 +116,7 @@
       box-sizing: border-box;
       z-index: 1000;
       flex-direction: column;
+      overflow-y: auto;
     }
 
     .mobile-menu.active {
